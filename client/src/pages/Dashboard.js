@@ -7,7 +7,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:5000/ideas")
+    axios.get("https://ai-startup-validator-zwvc.onrender.com")
       .then(res => setIdeas(res.data));
   }, []);
 
