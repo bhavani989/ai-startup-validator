@@ -14,7 +14,7 @@ function Home() {
     }
 
     try {
-      await axios.post("http://localhost:5000/ideas", {
+      await axios.post("https://ai-startup-validator-zwvc.onrender.com", {
         title,
         description
       });
