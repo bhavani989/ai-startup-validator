@@ -11,7 +11,7 @@ function Detail() {
   const reportRef = useRef(); // 👈 for PDF capture
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/ideas/${id}`)
+    axios.get(`https://ai-startup-validator-zwvc.onrender.com/${id}`)
       .then(res => setIdea(res.data));
   }, [id]);
 
