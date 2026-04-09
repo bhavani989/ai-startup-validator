@@ -44,6 +44,10 @@ async function analyzeIdea(title, description) {
 
 // ===== ROUTES =====
 
+app.get("/", (req, res) => {
+  res.send("API is running 🚀");
+});
+
 // POST
 app.post("/ideas", async (req, res) => {
   console.log("REQUEST:", req.body);
