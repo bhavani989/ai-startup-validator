@@ -14,7 +14,7 @@ function Home() {
     }
 
     try {
-      await axios.post("https://ai-startup-validator-zwvc.onrender.com", {
+      await axios.post("https://ai-startup-validator-zwvc.onrender.com/ideas", {
         title,
         description
       });
