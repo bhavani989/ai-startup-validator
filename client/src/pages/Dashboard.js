@@ -7,7 +7,7 @@ function Dashboard() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("https://ai-startup-validator-zwvc.onrender.com")
+    axios.get("https://ai-startup-validator-zwvc.onrender.com/ideas")
       .then(res => setIdeas(res.data));
   }, []);
 
